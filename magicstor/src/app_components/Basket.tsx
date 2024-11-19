@@ -1,14 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { IProductItem, StoreContext } from "@/context/ShopContext";
+import { StoreContext } from "@/context/ShopContext";
 import { useContext } from "react";
-
-const ProductCard = ({ product }: { product: IProductItem }) => {
-  return (
-    <div>
-      <div>{product.name}</div>
-    </div>
-  );
-};
 
 const Basket = () => {
   const { basket, removeFromBasket, clearBasket, items } =
