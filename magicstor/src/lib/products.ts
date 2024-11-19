@@ -1,10 +1,4 @@
-interface products {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  category: string;
-}
+
 
 export const products = [
   {
