@@ -7,14 +7,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { StoreContext } from "@/context/ShopContext";
-import { products } from "@/lib/products";
 import { useContext } from "react";
+import StarRating from "./StarRating";
 
 const ProductCard = () => {
-  const { addToBasket, filter } = useContext(StoreContext);
+  const { items, addToBasket, filter } = useContext(StoreContext);
+
   return (
     <div className="flex-1 col-span-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
-      {products
+      {items
         .filter((item) =>
           item.name.toUpperCase().includes(filter.toUpperCase())
         )
@@ -27,7 +28,8 @@ const ProductCard = () => {
                 alt="image"
               />
               <CardTitle>{product.name}</CardTitle>
-              <CardDescription>{product.description}</CardDescription>
+              <CardDescription>{product.category}</CardDescription>
+              <StarRating key={product.id} product={product} />
             </CardHeader>
             <CardFooter className="flex justify-between sm:flex-row flex-col">
               <span className="font-semibold">{product.price} SEK</span>

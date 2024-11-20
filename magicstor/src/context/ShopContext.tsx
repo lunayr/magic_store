@@ -11,7 +11,7 @@ export interface IProductItem {
   description: string;
   price: number;
   image: string;
-  ratings: { count: number; average: number };
+  ratings: { count: number; average: number; voted?: boolean };
 }
 
 interface IStoreContext {
@@ -22,7 +22,7 @@ interface IStoreContext {
   addToBasket: (id: number) => void;
   removeFromBasket: (id: number) => void;
   clearBasket: () => void;
-  addRating: (id: string, rating: number) => void;
+  addRating: (id: number, rating: number) => void;
   filter: string;
   setFilter: (query: string) => void;
 }
@@ -51,10 +51,10 @@ export const MagicStore = () => {
     });
   };
 
-  const handleAddRating = (id: string, rating: number) => {
+  const handleAddRating = (id: number, rating: number) => {
     setItems((prev) =>
       prev.map((item) => {
-        if (item.id.toString() === id) {
+        if (item.id === id && !item.ratings.voted) {
           const newCount = item.ratings.count + 1;
           const currentTotal = item.ratings.average * item.ratings.count;
           const newAverage = (currentTotal + rating) / newCount;
@@ -63,6 +63,7 @@ export const MagicStore = () => {
             ratings: {
               count: newCount,
               average: newAverage,
+              voted: true,
             },
           };
         }
