@@ -1,4 +1,5 @@
 
+
 import { MagicStore } from "./context/ShopContext";
 
 function App() {
