@@ -9,7 +9,7 @@ export const products: IProductItem[] = [
       "Perfect for beginners. Made from finest oak wood. This wand is handcrafted by the most experienced wandmakers, ensuring perfect balance and magical conductivity. Each wand is unique and bonds with its owner.",
 
     category: "Wands",
-    image: "https://placehold.co/800x400",
+    image: "wand.jpg",
     ratings: { count: 24, average: 4.5 },
   },
   {
@@ -19,7 +19,7 @@ export const products: IProductItem[] = [
     description:
       "See into the future with this genuine crystal sphere. A high-quality crystal ball made from pure quartz crystal. Perfect for divination and seeing hidden truths. Includes a velvet stand and instruction manual.",
     category: "Divination",
-    image: "https://placehold.co/200x200",
+    image: "crystalbal.jpg",
     ratings: { count: 1, average: 4.0 },
   },
   {
@@ -29,7 +29,7 @@ export const products: IProductItem[] = [
     description:
       "Contains 101 essential spells for everyday use. A comprehensive collection of time-tested spells. Includes clear instructions and safety guidelines from experienced wizards. Perfect for beginners.",
     category: "Books",
-    image: "https://placehold.co/800x400",
+    image: "spellbook.jpg",
     ratings: { count: 32, average: 4.6 },
   },
   {
@@ -39,7 +39,7 @@ export const products: IProductItem[] = [
     description:
       "Set of 3 rings with protective enchantments. Each ring in this set carries unique protective enchantments. Crafted from sterling silver with embedded magical gems. Adjustable size.",
     category: "Jewelry",
-    image: "https://placehold.co/800x400",
+    image: "ring.jpg",
     ratings: { count: 15, average: 4.3 },
   },
   {
@@ -49,7 +49,7 @@ export const products: IProductItem[] = [
     description:
       "Complete beginner's kit for brewing magical potions. Everything you need to start brewing potions. Includes cauldron, basic ingredients, measuring tools, and a detailed guidebook for 20 starter potions.",
     category: "Potions",
-    image: "https://placehold.co/800x400",
+    image: "potionmakingkit.jpg",
     ratings: { count: 28, average: 4.5 },
   },
   {
@@ -59,7 +59,7 @@ export const products: IProductItem[] = [
     description:
       "Traditional flying carpet with built-in safety features. Handwoven flying carpet with anti-fall enchantments and automatic altitude control. Perfect for leisure flights and magical transportation.",
     category: "Transportation",
-    image: "https://placehold.co/800x400",
+    image: "flyingcarpet.jpg",
     ratings: { count: 12, average: 4.0 },
   },
   {
@@ -69,7 +69,7 @@ export const products: IProductItem[] = [
     description:
       "Collection of 12 essential magical herbs and fungi. Carefully selected and preserved magical plants. Perfect for potion-making and spellcasting. Includes guide for proper storage and usage.",
     category: "Ingredients",
-    image: "https://placehold.co/800x400",
+    image: "herbs.jpg",
     ratings: { count: 22, average: 4.5 },
   },
   {
@@ -79,7 +79,7 @@ export const products: IProductItem[] = [
     description:
       "Self-inking quill with spell-check capabilities. Never run out of ink with this enchanted quill. Features automatic spell-checking and neat handwriting enhancement. Comes with a protective case.",
     category: "Stationery",
-    image: "https://placehold.co/800x400",
+    image: "quill.jpg",
     ratings: { count: 20, average: 4.25 },
   },
   {
@@ -89,7 +89,7 @@ export const products: IProductItem[] = [
     description:
       "Interactive chess set with animated pieces. Traditional wizard's chess set with voice-commanded pieces. Made from marble and enchanted wood. Pieces repair themselves if damaged.",
     category: "Games",
-    image: "https://placehold.co/800x400",
+    image: "chess.jpg",
     ratings: { count: 30, average: 4.7 },
   },
   {
@@ -99,7 +99,7 @@ export const products: IProductItem[] = [
     description:
       "High-quality invisibility cloak with long-lasting enchantment. Premium invisibility cloak made from the finest materials. Provides complete invisibility for up to 12 hours. Machine washable on gentle cycle.",
     category: "Clothing",
-    image: "https://placehold.co/800x400",
+    image: "cloak.jpg",
     ratings: { count: 16, average: 4.7 },
   },
   {
@@ -109,7 +109,7 @@ export const products: IProductItem[] = [
     description:
       "Interactive mirror with truth-telling capabilities.Enchanted mirror that provides honest answers and advice. Features mood lighting and anti-fog spell. Perfect for daily consultations.",
     category: "Divination",
-    image: "https://placehold.co/800x400",
+    image: "mirrormagic.jpg",
     ratings: { count: 25, average: 4.4 },
   },
   {
@@ -119,7 +119,7 @@ export const products: IProductItem[] = [
     description:
       "Heat-resistant gloves made from genuine dragon scales. Protective gloves perfect for handling hot objects and magical creatures. Provides protection up to 1000°F. Water and spell resistant.",
     category: "Accessories",
-    image: "https://placehold.co/800x400",
+    image: "gloves.jpg",
     ratings: { count: 19, average: 4.3 },
   },
 ];

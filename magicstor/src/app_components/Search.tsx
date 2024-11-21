@@ -19,26 +19,34 @@ const Search = () => {
   return (
     <div className="flex gap-4 flex-col">
       <form className="flex gap-4" onSubmit={handleSubmit}>
-        <Input
-          placeholder="Search"
-          value={search_query}
-          onChange={handleSearchChange}
-        />
+        <div className="flex flex-col w-full">
+          <Input
+            placeholder="Search"
+            value={search_query}
+            onChange={handleSearchChange}
+          />
+          {search_query.length > 2 &&
+            items.some(
+              (item) =>
+                item.id &&
+                item.name.toUpperCase().includes(search_query.toUpperCase())
+            ) && (
+              <div className="py-2 pl-3 mt-[1px] bg-white border-[1px] border-t-0 rounded">
+                {items
+                  .filter((i) =>
+                    i.name.toUpperCase().includes(search_query.toUpperCase())
+                  )
+                  .map((item) => {
+                    return <div key={item.id}>{item.name}</div>;
+                  })}
+              </div>
+            )}
+        </div>
+
         <Button type="submit" className="bg-emerald-900">
           Search
         </Button>
       </form>
-      {search_query.length > 2 && (
-        <div className="bg-red-100 w-full">
-          {items
-            .filter((i) =>
-              i.name.toUpperCase().includes(search_query.toUpperCase())
-            )
-            .map((item) => {
-              return <div key={item.id}>{item.name}</div>;
-            })}
-        </div>
-      )}
     </div>
   );
 };
