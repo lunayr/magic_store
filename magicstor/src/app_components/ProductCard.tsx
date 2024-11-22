@@ -12,6 +12,8 @@ import { useContext, useRef, useState } from "react";
 import StarRating from "./StarRating";
 import { X } from "lucide-react";
 
+
+// This component lists all of the products and creates Card component for each product. To show the modal when clicked on more button, the HTML element of Dialog is used
 const ProductCard = () => {
   const { items, addToBasket, filter } = useContext(StoreContext);
   const dialogRef = useRef<HTMLDialogElement>(null);

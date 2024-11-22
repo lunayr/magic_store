@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input";
 import { StoreContext } from "@/context/ShopContext";
 import { useContext } from "react";
 
+
+// this component handles the search button and give recommandations when the length of search_query > 2 
 const Search = () => {
   const { search_query, setSearchQuery, items, setFilter } =
     useContext(StoreContext);

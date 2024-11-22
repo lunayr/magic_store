@@ -3,6 +3,7 @@ import { Star } from "lucide-react";
 import { IProductItem, StoreContext } from "@/context/ShopContext";
 import { cn } from "@/lib/utils";
 
+// this component is handling rating star system and using context to handle when giving rate
 const StarRating: React.FC<{ product: IProductItem }> = ({ product }) => {
   const { addRating } = useContext(StoreContext);
 

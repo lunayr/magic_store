@@ -4,6 +4,8 @@ import Search from "@/app_components/Search";
 import { products } from "@/lib/products";
 import { createContext, useState } from "react";
 
+
+// Context page. Handling basic functions and types for all the components inside "app_components"
 export interface IProductItem {
   id: number;
   name: string;
